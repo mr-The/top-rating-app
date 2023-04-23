@@ -1,0 +1,55 @@
+/* stylelint-disable selector-class-pattern */
+.firstLevel {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 20px;
+  align-items: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.firstLevelActive,
+.firstLevel:hover {
+  color: var(--primary);
+}
+
+.firstLevelActive svg,
+.firstLevel:hover svg {
+  fill: var(--primary);
+}
+
+.secondLevel {
+  margin-bottom: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: var(--gray-dark);
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.secondBlock {
+  margin-top: 15px;
+  margin-left: 12px;
+  padding-left: 32px;
+  border-left: 1px solid var(--gray);
+}
+
+.secondLevelBlock {
+  overflow: hidden;
+}
+
+.thirdLevel {
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: var(--gray-dark);
+  font-weight: 500;
+  font-size: 14px;
+  outline-offset: -1px;
+}
+
+.thirdLevelActive,
+.thirdLevel:hover {
+  color: var(--primary);
+}

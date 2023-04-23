@@ -1,0 +1,35 @@
+.sort {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 40px;
+}
+
+.icon {
+  visibility: hidden;
+}
+
+.sort>button {
+  cursor: pointer;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 20px 1fr;
+  align-items: center;
+  white-space: nowrap;
+  width: 100%;
+  border: none;
+  background: none;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 2px 5px;
+}
+
+.active {
+  font-weight: bold;
+  color: var(--primary);
+}
+
+
+.active .icon {
+  visibility: visible;
+  margin-right: 8px;
+}

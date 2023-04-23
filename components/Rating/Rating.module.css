@@ -1,0 +1,37 @@
+.wrapper {
+  position: relative;
+  line-height: 19px;
+}
+
+.star svg {
+  margin: 2px 3px 0;
+}
+
+.star {
+  display: inline-block;
+  padding-top: 1px;
+}
+
+.editable {
+  cursor: pointer;
+}
+
+.error svg {
+  stroke: var(--red);
+}
+
+.filled svg {
+  fill: var(--primary);
+  stroke: var(--primary);
+}
+
+.error svg:hover {
+  stroke: var(--primary);
+}
+
+.message {
+  position: absolute;
+  bottom: -24px;
+  left: 0;
+  color: var(--red)
+}

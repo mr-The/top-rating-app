@@ -1,0 +1,91 @@
+.form {
+  font-size: 14px;
+  line-height: 24px;
+  display: grid;
+  grid-template-columns: [start] auto 1fr auto [end];
+  gap: 20px 30px;
+  align-items: center;
+}
+
+.form input {
+  justify-self: start;
+}
+
+.rating {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+}
+
+.description,
+.submit {
+  grid-column: start / end;
+}
+
+.submit>span {
+  margin-left: 15px;
+}
+
+.success {
+  background: var(--green-light);
+  margin-top: 20px;
+  padding: 20px;
+  position: relative;
+  border-radius: 5px;
+}
+
+.error {
+  background: var(--red-light);
+  margin-top: 20px;
+  padding: 20px;
+  position: relative;
+  border-radius: 5px;
+}
+
+.success>p {
+  font-weight: bold;
+}
+
+.close {
+  border: none;
+  background: none;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  cursor: pointer;
+}
+
+.error .close {
+  fill: var(--red);
+}
+
+@media screen and (max-width: 1140px) {
+  .form {
+    grid-template-columns: [start] 1fr 1fr [end];
+  }
+
+  .form input {
+    justify-self: normal;
+  }
+
+  .rating {
+    grid-column: start / end;
+  }
+
+  .description {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .submit>button {
+    display: block;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .form {
+    grid-template-columns: [start] 1fr [end];
+  }
+}

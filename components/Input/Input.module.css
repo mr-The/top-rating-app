@@ -1,0 +1,35 @@
+.wrapper {
+  position: relative;
+}
+
+.input {
+  padding: 7px 15px;
+  margin-bottom: 10px;
+  border: none;
+  outline: var(--primary);
+  background: var(--white);
+  box-shadow: 0 4px 4px rgb(0 0 0 / 5%);
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: var(--font-family);
+}
+
+.input::placeholder {
+  color: var(--gray)
+}
+
+.error {
+  outline: 1px solid var(--red);
+}
+
+.input:focus {
+  outline: 2px solid var(--primary-hover);
+}
+
+.message {
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  color: var(--red);
+}
