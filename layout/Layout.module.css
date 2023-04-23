@@ -65,6 +65,6 @@
   }
 
   .header {
-    display: block;
+    display: grid;
   }
 }
